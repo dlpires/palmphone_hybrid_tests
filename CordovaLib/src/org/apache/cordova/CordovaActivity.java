@@ -147,6 +147,7 @@ public class CordovaActivity extends Activity {
         createViews();
         if (!appView.isInitialized()) {
             appView.init(cordovaInterface, pluginEntries, preferences);
+
         }
         cordovaInterface.onCordovaInit(appView.getPluginManager());
 

@@ -8,6 +8,7 @@ import android.support.test.rule.ActivityTestRule;
 import android.support.test.runner.AndroidJUnit4;
 import android.test.suitebuilder.annotation.LargeTest;
 
+import org.apache.cordova.CordovaActivity;
 import org.junit.Rule;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -31,12 +32,13 @@ public class LoginTest {
     @Rule
     public ActivityTestRule<MainActivity> mActivityRule =
             new ActivityTestRule<MainActivity>(MainActivity.class,
-                    false,false){
+                    true,false){
                 @Override
                 protected void afterActivityLaunched() {
                     onWebView().forceJavascriptEnabled();
                 }
             };
+
     @Test
     public void loginTest() {
 

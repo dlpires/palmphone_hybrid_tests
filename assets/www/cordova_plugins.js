@@ -275,7 +275,7 @@ module.exports.metadata =
 // TOP OF METADATA
 {
   "cordova-plugin-firebase": "0.1.25",
-  "phonegap-plugin-barcodescanner": "7.1.1",
+  "phonegap-plugin-barcodescanner": "7.1.2",
   "ionic-plugin-keyboard": "2.2.1",
   "cordova-plugin-whitelist": "1.3.3",
   "cordova-plugin-device": "1.1.7",
@@ -285,7 +285,7 @@ module.exports.metadata =
   "com.synconset.imagepicker": "2.1.8",
   "cordova-plugin-file": "6.0.1",
   "cordova-plugin-camera": "4.0.3",
-  "cordova-android-support-gradle-release": "1.4.1"
+  "cordova-android-support-gradle-release": "1.4.4"
 };
 // BOTTOM OF METADATA
 });

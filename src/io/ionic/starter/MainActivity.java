@@ -19,7 +19,7 @@
 
 package io.ionic.starter;
 
-/*import android.os.Bundle;
+import android.os.Bundle;
 import android.support.annotation.VisibleForTesting;
 
 import org.apache.cordova.*;
@@ -45,7 +45,7 @@ public class MainActivity extends CordovaActivity
         // Set by <content src="index.html" /> in config.xml
         loadUrl(launchUrl);
     }
-}*/
+}
         /*
          * Copyright 2015, The Android Open Source Project
          *
@@ -61,7 +61,7 @@ public class MainActivity extends CordovaActivity
          * See the License for the specific language governing permissions and
          * limitations under the License.
          */
-import android.app.Activity;
+/*import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
@@ -69,14 +69,14 @@ import android.support.annotation.VisibleForTesting;
 import android.text.TextUtils;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
-import static android.support.test.espresso.web.internal.deps.guava.base.Preconditions.checkNotNull;
+import static android.support.test.espresso.web.internal.deps.guava.base.Preconditions.checkNotNull;*/
 
 /**
  * An {@link Activity} that gets a text string from the user and displays it back when the user
  * clicks on one of the two buttons. The first one shows it in the same activity and the second
  * one opens another activity and displays the message.
  */
-public class MainActivity extends Activity {
+/*public class MainActivity extends Activity {
 
     public static final String KEY_URL_TO_LOAD = "KEY_URL_TO_LOAD";
 
@@ -107,4 +107,4 @@ public class MainActivity extends Activity {
         return !TextUtils.isEmpty(url) ? url : WEB_FORM_URL;
     }
 
-}
+}*/

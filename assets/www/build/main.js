@@ -155,7 +155,7 @@ var EdiProfessorPage = (function () {
     };
     EdiProfessorPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_3__angular_core__["m" /* Component */])({
-            selector: 'page-edi-professor',template:/*ion-inline-start:"D:\ARQUIVOS\palmphone_V3\src\pages\edi-professor\edi-professor.html"*/'<ion-header>\n\n\n\n  <ion-navbar>\n\n    <ion-title>Editar</ion-title>\n\n  </ion-navbar>\n\n\n\n</ion-header>\n\n\n\n\n\n<ion-content padding>\n\n\n\n  <form [formGroup]="form" (ngSubmit)="save(); $event.preventDefault()">\n\n    <ion-item>\n\n      <label stacked>Nome</label>\n\n      <input id="nome" type="text"  [(ngModel)]="dados.nomeProf"  formControlName="nomeProf"/>\n\n    </ion-item>\n\n    \n\n\n\n    <ion-item>\n\n      <label stacked>Rg</label>\n\n      <input id="rg" type="text" [(ngModel)]="dados.rgProf" formControlName="rgProf"/>\n\n    </ion-item>\n\n\n\n\n\n    <ion-item>\n\n      <label stacked>Data Nascimento</label>\n\n      <input id="nascimento" type="date" displayFormat="DD/MM/YYYY" [(ngModel)]="dados.dataNascProf" formControlName="dataNascProf"/>\n\n    </ion-item>\n\n\n\n\n\n    <ion-item>\n\n      <ion-icon name="image" item-start></ion-icon>\n\n      <input type="file" accept="image/*" (change)="onPhoto($event)">\n\n    </ion-item>\n\n\n\n    <div padding>\n\n      <button ion-button block type="submit" [disabled]="!form.valid" (click)="save()">Salvar</button>\n\n    </div>\n\n    \n\n  </form>\n\n\n\n\n\n\n\n</ion-content>\n\n'/*ion-inline-end:"D:\ARQUIVOS\palmphone_V3\src\pages\edi-professor\edi-professor.html"*/,
+            selector: 'page-edi-professor',template:/*ion-inline-start:"C:\Users\Julio\Desktop\teste2\palmphone_V3\src\pages\edi-professor\edi-professor.html"*/'<ion-header>\n\n\n\n  <ion-navbar>\n\n    <ion-title>Editar</ion-title>\n\n  </ion-navbar>\n\n\n\n</ion-header>\n\n\n\n\n\n<ion-content padding>\n\n\n\n  <form [formGroup]="form" (ngSubmit)="save(); $event.preventDefault()">\n\n    <ion-item>\n\n      <label stacked>Nome</label>\n\n      <input id="nome" type="text"  [(ngModel)]="dados.nomeProf"  formControlName="nomeProf"/>\n\n    </ion-item>\n\n    \n\n\n\n    <ion-item>\n\n      <label stacked>Rg</label>\n\n      <input id="rg" type="text" [(ngModel)]="dados.rgProf" formControlName="rgProf"/>\n\n    </ion-item>\n\n\n\n\n\n    <ion-item>\n\n      <label stacked>Data Nascimento</label>\n\n      <input id="nascimento" type="date" displayFormat="DD/MM/YYYY" [(ngModel)]="dados.dataNascProf" formControlName="dataNascProf"/>\n\n    </ion-item>\n\n\n\n\n\n    <ion-item>\n\n      <ion-icon name="image" item-start></ion-icon>\n\n      <input type="file" accept="image/*" (change)="onPhoto($event)">\n\n    </ion-item>\n\n\n\n    <div padding>\n\n      <button ion-button block type="submit" [disabled]="!form.valid" (click)="save()">Salvar</button>\n\n    </div>\n\n    \n\n  </form>\n\n\n\n\n\n\n\n</ion-content>\n\n'/*ion-inline-end:"C:\Users\Julio\Desktop\teste2\palmphone_V3\src\pages\edi-professor\edi-professor.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__providers_auth__["a" /* AuthProvider */],
             __WEBPACK_IMPORTED_MODULE_4_ionic_angular__["g" /* NavController */],
@@ -364,7 +364,7 @@ var CadProfessorPage = (function () {
     };
     CadProfessorPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_3__angular_core__["m" /* Component */])({
-            selector: 'page-cad-professor',template:/*ion-inline-start:"D:\ARQUIVOS\palmphone_V3\src\pages\cad-professor\cad-professor.html"*/'<ion-header>\n\n\n\n  <ion-navbar>\n\n    <ion-title>Professor</ion-title>\n\n  </ion-navbar>\n\n\n\n</ion-header>\n\n\n\n\n\n<ion-content padding>\n\n\n\n  <form [formGroup]="form" (ngSubmit)="save(); $event.preventDefault()"> \n\n\n\n    <ion-item>\n\n      <ion-icon name="image" item-start></ion-icon>\n\n      <input type="file" accept="image/*" (change)="onPhoto($event)" required>\n\n    </ion-item>\n\n\n\n    <ion-item> \n\n        <label stacked>Nome</label>   \n\n      <input id="nome"  type="text"  formControlName="nomeProf"/>\n\n    </ion-item>\n\n    \n\n \n\n    <ion-item>\n\n      <label stacked>Rg</label>\n\n      <input id="rg" type="text"  formControlName="rgProf"/>\n\n    </ion-item>\n\n    \n\n\n\n    <ion-item>\n\n      <label stacked>Nascimento</label>\n\n      <input id="nascimento" type="text" displayFormat="DD/MM/YYYY"  formControlName="dataNascProf"/>\n\n    </ion-item>\n\n    \n\n\n\n    <ion-item>\n\n      <label stacked>Email</label>\n\n      <!--<input id="email" type="email"   formControlName="emailProf"/> -->\n\n      <input id="email2" type="email" placeholder="Email" formControlName="emailProf"/>\n\n    </ion-item>\n\n    \n\n\n\n    <ion-item>\n\n      <label stacked>Senha</label>\n\n      <input id="password2" type="password"   formControlName="senhaProf"/>\n\n    </ion-item>\n\n    \n\n\n\n    <ion-item>\n\n      <label>Disciplinas</label>\n\n      <select id="disciplinas"  multiple="true" cancelText="Cancelar" okText="Confirmar" formControlName="disciplinas">\n\n        <option value="SIF039 - Redes de Computadores II">SIF039 - Redes de Computadores II</option>\n\n        <option value="SIF033 - Engenharia de Software III">SIF033 - Engenharia de Software III</option>\n\n        <option value="SIF040 - Projeto de Sistemas I">SIF040 - Projeto de Sistemas I</option>\n\n        <option value="SIF068 - Tópicos em Linguagem de Programação">SIF068 - Tópicos em Linguagem de Programação</option>\n\n        <option value="SIF012 - Linguagem de Programação IV">SIF012 - Linguagem de Programação IV</option>\n\n        <option value="SIF032 - Engenharia de Software II">SIF032 - Engenharia de Software II</option>\n\n        <option value="SIF035 - Interface Humano Computador">SIF035 - Interface Humano Computador</option>\n\n      </select>\n\n    </ion-item>\n\n    \n\n\n\n    <div padding>\n\n      <button id="salvar" ion-button block type="submit" [disabled]="!form.valid">Salvar</button>\n\n    </div>\n\n    \n\n  </form>\n\n\n\n\n\n</ion-content>\n\n'/*ion-inline-end:"D:\ARQUIVOS\palmphone_V3\src\pages\cad-professor\cad-professor.html"*/,
+            selector: 'page-cad-professor',template:/*ion-inline-start:"C:\Users\Julio\Desktop\teste2\palmphone_V3\src\pages\cad-professor\cad-professor.html"*/'<ion-header>\n\n\n\n  <ion-navbar>\n\n    <ion-title>Professor</ion-title>\n\n  </ion-navbar>\n\n\n\n</ion-header>\n\n\n\n\n\n<ion-content padding>\n\n\n\n  <form [formGroup]="form" (ngSubmit)="save(); $event.preventDefault()"> \n\n\n\n    <ion-item>\n\n      <ion-icon name="image" item-start></ion-icon>\n\n      <input type="file" accept="image/*" (change)="onPhoto($event)" required>\n\n    </ion-item>\n\n\n\n    <ion-item> \n\n        <label stacked>Nome</label>   \n\n      <input id="nome"  type="text"  formControlName="nomeProf"/>\n\n    </ion-item>\n\n    \n\n \n\n    <ion-item>\n\n      <label stacked>Rg</label>\n\n      <input id="rg" type="text"  formControlName="rgProf"/>\n\n    </ion-item>\n\n    \n\n\n\n    <ion-item>\n\n      <label stacked>Nascimento</label>\n\n      <input id="nascimento" type="text" displayFormat="DD/MM/YYYY"  formControlName="dataNascProf"/>\n\n    </ion-item>\n\n    \n\n\n\n    <ion-item>\n\n      <label stacked>Email</label>\n\n      <!--<input id="email" type="email"   formControlName="emailProf"/> -->\n\n      <input id="email2" type="email" placeholder="Email" formControlName="emailProf"/>\n\n    </ion-item>\n\n    \n\n\n\n    <ion-item>\n\n      <label stacked>Senha</label>\n\n      <input id="password2" type="password"   formControlName="senhaProf"/>\n\n    </ion-item>\n\n    \n\n\n\n    <ion-item>\n\n      <label>Disciplinas</label>\n\n      <select id="disciplinas"  multiple="true" cancelText="Cancelar" okText="Confirmar" formControlName="disciplinas">\n\n        <option value="SIF039 - Redes de Computadores II">SIF039 - Redes de Computadores II</option>\n\n        <option value="SIF033 - Engenharia de Software III">SIF033 - Engenharia de Software III</option>\n\n        <option value="SIF040 - Projeto de Sistemas I">SIF040 - Projeto de Sistemas I</option>\n\n        <option value="SIF068 - Tópicos em Linguagem de Programação">SIF068 - Tópicos em Linguagem de Programação</option>\n\n        <option value="SIF012 - Linguagem de Programação IV">SIF012 - Linguagem de Programação IV</option>\n\n        <option value="SIF032 - Engenharia de Software II">SIF032 - Engenharia de Software II</option>\n\n        <option value="SIF035 - Interface Humano Computador">SIF035 - Interface Humano Computador</option>\n\n      </select>\n\n    </ion-item>\n\n    \n\n\n\n    <div padding>\n\n      <button id="salvar" ion-button block type="submit" [disabled]="!form.valid">Salvar</button>\n\n    </div>\n\n    \n\n  </form>\n\n\n\n\n\n</ion-content>\n\n'/*ion-inline-end:"C:\Users\Julio\Desktop\teste2\palmphone_V3\src\pages\cad-professor\cad-professor.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__providers_auth__["a" /* AuthProvider */],
             __WEBPACK_IMPORTED_MODULE_4_ionic_angular__["g" /* NavController */],
@@ -449,7 +449,7 @@ var ColetorPage = (function () {
     };
     ColetorPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-coletor',template:/*ion-inline-start:"D:\ARQUIVOS\palmphone_V3\src\pages\coletor\coletor.html"*/'<ion-header>\n\n  \n\n  <ion-navbar>\n\n    <ion-title>Coletor </ion-title>\n\n  </ion-navbar>\n\n\n\n</ion-header>\n\n\n\n<ion-content padding>\n\n<ion-card>\n\n  <ion-list>\n\n    <ion-item>\n\n      <h2>{{currentUser.nomeProf}}</h2>\n\n    </ion-item>\n\n  </ion-list>\n\n\n\n\n\n  <ion-list>\n\n    <ion-item>\n\n      <label>Disciplina:</label>\n\n      <select id="disciplina" [(ngModel)]="disc" (ionChange)="verificaDisci(disc)" interface="popover">       \n\n        <option *ngFor="let disc of disciplina" value="disc">{{disc}}</option>\n\n      </select>\n\n    </ion-item>\n\n  </ion-list>\n\n\n\n  <ion-list>\n\n    <ion-item>\n\n      <label>Nº de aulas:</label>\n\n      <select id="numero_aulas" [(ngModel)]="numAula" (ionChange)="verificaNumAula(numAula)" interface="popover">\n\n        <option value="1">1</option>\n\n        <option value="2">2</option>\n\n        <option value="3">3</option>\n\n        <option value="4">4</option>\n\n      </select>\n\n    </ion-item>\n\n  </ion-list>\n\n</ion-card>\n\n\n\n<ion-card>\n\n\n\n  <button id="abrir_leitor" ion-button full (click)="abrirLeitor()">\n\n      Coletar dados\n\n  </button>\n\n</ion-card>\n\n</ion-content>\n\n'/*ion-inline-end:"D:\ARQUIVOS\palmphone_V3\src\pages\coletor\coletor.html"*/,
+            selector: 'page-coletor',template:/*ion-inline-start:"C:\Users\Julio\Desktop\teste2\palmphone_V3\src\pages\coletor\coletor.html"*/'<ion-header>\n\n  \n\n  <ion-navbar>\n\n    <ion-title>Coletor </ion-title>\n\n  </ion-navbar>\n\n\n\n</ion-header>\n\n\n\n<ion-content padding>\n\n<ion-card>\n\n  <ion-list>\n\n    <ion-item>\n\n      <h2>{{currentUser.nomeProf}}</h2>\n\n    </ion-item>\n\n  </ion-list>\n\n\n\n\n\n  <ion-list>\n\n    <ion-item>\n\n      <label>Disciplina:</label>\n\n      <select id="disciplina" [(ngModel)]="disc" (ionChange)="verificaDisci(disc)" interface="popover">       \n\n        <option *ngFor="let disc of disciplina" value="disc">{{disc}}</option>\n\n      </select>\n\n    </ion-item>\n\n  </ion-list>\n\n\n\n  <ion-list>\n\n    <ion-item>\n\n      <label>Nº de aulas:</label>\n\n      <select id="numero_aulas" [(ngModel)]="numAula" (ionChange)="verificaNumAula(numAula)" interface="popover">\n\n        <option value="1">1</option>\n\n        <option value="2">2</option>\n\n        <option value="3">3</option>\n\n        <option value="4">4</option>\n\n      </select>\n\n    </ion-item>\n\n  </ion-list>\n\n</ion-card>\n\n\n\n<ion-card>\n\n\n\n  <button id="abrir_leitor" ion-button full (click)="abrirLeitor()">\n\n      Coletar dados\n\n  </button>\n\n</ion-card>\n\n</ion-content>\n\n'/*ion-inline-end:"C:\Users\Julio\Desktop\teste2\palmphone_V3\src\pages\coletor\coletor.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavController */],
             __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavParams */],
@@ -526,13 +526,6 @@ var LeitorPage = (function () {
                 message: 'Deseja finalizar a chamada?',
                 buttons: [
                     {
-                        text: 'Cancelar',
-                        role: 'cancel',
-                        handler: function () {
-                            console.log('evento cancelado');
-                        }
-                    },
-                    {
                         text: 'Confirmar',
                         handler: function () {
                             //FORMATA DATA ATUAL, QUE SERA A CHAVE PRIMARIA 
@@ -560,13 +553,6 @@ var LeitorPage = (function () {
                 title: 'Confirmação da leitura',
                 message: 'Deseja salvar este RA: ' + this.form.value.ra + ' ?',
                 buttons: [
-                    {
-                        text: 'Cancelar',
-                        role: 'cancel',
-                        handler: function () {
-                            console.log('evento cancelado');
-                        }
-                    },
                     {
                         text: 'Confirmar',
                         handler: function () {
@@ -604,13 +590,6 @@ var LeitorPage = (function () {
                     message: 'Deseja salvar este RA: ' + valor.text + ' ?',
                     buttons: [
                         {
-                            text: 'Cancelar',
-                            role: 'cancel',
-                            handler: function () {
-                                console.log('evento cancelado');
-                            }
-                        },
-                        {
                             text: 'Confirmar',
                             handler: function () {
                                 //FORMATA DATA ATUAL
@@ -632,7 +611,7 @@ var LeitorPage = (function () {
             else {
                 //CRIA UM ALERTA E EXIBE A MENSAGEM DE ERRO
                 var alert_4 = _this.alertCtrl.create({
-                    title: 'Captura nao realizada!',
+                    title: 'Captura nao realizada teste ionic!',
                     buttons: ['Fechar']
                 });
                 alert_4.present();
@@ -672,13 +651,6 @@ var LeitorPage = (function () {
             message: 'Deseja cancelar a chamada e voltar a pagina anterior?',
             buttons: [
                 {
-                    text: 'Cancelar',
-                    role: 'cancel',
-                    handler: function () {
-                        console.log('evento cancelado');
-                    }
-                },
-                {
                     text: 'Confirmar',
                     handler: function () {
                         _this.navCtrl.pop();
@@ -701,7 +673,7 @@ var LeitorPage = (function () {
     };
     LeitorPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_1__angular_core__["m" /* Component */])({
-            selector: 'page-leitor',template:/*ion-inline-start:"D:\ARQUIVOS\palmphone_V3\src\pages\leitor\leitor.html"*/'<ion-header>\n\n  \n\n  <ion-navbar hideBackButton>\n\n    <ion-title>Coleta de Dados</ion-title>\n\n  </ion-navbar>\n\n\n\n</ion-header>\n\n\n\n  <ion-content padding>\n\n    <ion-card>\n\n      <form [formGroup]="form" (ngSubmit)="saveManual(); $event.preventDefault()">\n\n        <ion-item>         \n\n          <input id="ra" type="number" placeholder="Insira o RA:" formControlName="ra"/>\n\n        </ion-item> \n\n          \n\n        <button id="botao_salvar" ion-button full type="submit" [disabled]="form.invalid">Salvar</button>\n\n      </form>\n\n\n\n      <button id="botao_finalizar" ion-button full type="submit" color="secondary" (click)="saveStorage()">Finalizar Chamada</button>\n\n    </ion-card>\n\n    \n\n    <ion-card>\n\n      <button id="botao_cancelar" ion-button full type="submit" color="danger" (click)="cancelar()">Cancelar</button>\n\n    </ion-card>\n\n\n\n  <ion-fab right bottom>\n\n    <button id="botao_camera" ion-fab color="danger" (click)="scanBarcode()">\n\n      <ion-icon name="md-barcode"></ion-icon>\n\n    </button>\n\n  </ion-fab>\n\n\n\n</ion-content>\n\n'/*ion-inline-end:"D:\ARQUIVOS\palmphone_V3\src\pages\leitor\leitor.html"*/,
+            selector: 'page-leitor',template:/*ion-inline-start:"C:\Users\Julio\Desktop\teste2\palmphone_V3\src\pages\leitor\leitor.html"*/'<ion-header>\n\n  \n\n  <ion-navbar hideBackButton>\n\n    <ion-title>Coleta de Dados</ion-title>\n\n  </ion-navbar>\n\n\n\n</ion-header>\n\n\n\n  <ion-content padding>\n\n    <ion-card>\n\n      <form [formGroup]="form" (ngSubmit)="saveManual(); $event.preventDefault()">\n\n        <ion-item>         \n\n          <input id="ra" type="number" placeholder="Insira o RA:" formControlName="ra"/>\n\n        </ion-item> \n\n          \n\n        <button id="botao_salvar" ion-button full type="submit" [disabled]="form.invalid">Salvar</button>\n\n      </form>\n\n\n\n      <button id="botao_finalizar" ion-button full type="submit" color="secondary" (click)="saveStorage()">Finalizar Chamada</button>\n\n    </ion-card>\n\n    \n\n    <ion-card>\n\n      <button id="botao_cancelar" ion-button full type="submit" color="danger" (click)="cancelar()">Cancelar</button>\n\n    </ion-card>\n\n\n\n    <ion-card>\n\n      <button id="botao_camera" ion-button full color="light" (click)="scanBarcode()">Camera</button>\n\n    </ion-card>\n\n\n\n\n\n</ion-content>\n\n'/*ion-inline-end:"C:\Users\Julio\Desktop\teste2\palmphone_V3\src\pages\leitor\leitor.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_2_ionic_angular__["g" /* NavController */],
             __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["h" /* NavParams */],
@@ -780,7 +752,7 @@ var PerfilPage = (function () {
     };
     PerfilPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_1__angular_core__["m" /* Component */])({
-            selector: 'page-perfil',template:/*ion-inline-start:"D:\ARQUIVOS\palmphone_V3\src\pages\perfil\perfil.html"*/'<ion-header>\n\n  \n\n  <ion-navbar>\n\n    <ion-title>Perfil Usuário </ion-title>\n\n  </ion-navbar>\n\n\n\n</ion-header>\n\n\n\n\n\n<ion-content padding>\n\n\n\n  <ion-item >\n\n    \n\n      <img src="{{currentUser.url}}" alt="Imagem de perfil" height="150" right="150" class="photoPerfil"/>\n\n    \n\n  </ion-item>\n\n\n\n  <ion-item>\n\n    <h2>{{currentUser.nomeProf}}</h2>\n\n  </ion-item>\n\n\n\n  <ion-item>\n\n    <p>{{currentUser.emailProf}}</p>\n\n  </ion-item>\n\n\n\n  <ion-item>\n\n    <p>{{currentUser.rgProf}}</p>\n\n  </ion-item>\n\n\n\n  <ion-item>\n\n    <p>{{currentUser.dataNascProf  }}</p>\n\n  </ion-item>\n\n\n\n  <ion-fab bottom right>\n\n    <button ion-fab icon-only color="danger" (click)="editarProfessor()">\n\n      <ion-icon name="create"></ion-icon>\n\n    </button>\n\n  </ion-fab>\n\n\n\n</ion-content>\n\n'/*ion-inline-end:"D:\ARQUIVOS\palmphone_V3\src\pages\perfil\perfil.html"*/,
+            selector: 'page-perfil',template:/*ion-inline-start:"C:\Users\Julio\Desktop\teste2\palmphone_V3\src\pages\perfil\perfil.html"*/'<ion-header>\n\n  \n\n  <ion-navbar>\n\n    <ion-title>Perfil Usuário </ion-title>\n\n  </ion-navbar>\n\n\n\n</ion-header>\n\n\n\n\n\n<ion-content padding>\n\n\n\n  <ion-item >\n\n    \n\n      <img src="{{currentUser.url}}" alt="Imagem de perfil" height="150" right="150" class="photoPerfil"/>\n\n    \n\n  </ion-item>\n\n\n\n  <ion-item>\n\n    <h2>{{currentUser.nomeProf}}</h2>\n\n  </ion-item>\n\n\n\n  <ion-item>\n\n    <p>{{currentUser.emailProf}}</p>\n\n  </ion-item>\n\n\n\n  <ion-item>\n\n    <p>{{currentUser.rgProf}}</p>\n\n  </ion-item>\n\n\n\n  <ion-item>\n\n    <p>{{currentUser.dataNascProf  }}</p>\n\n  </ion-item>\n\n\n\n  <ion-fab bottom right>\n\n    <button ion-fab icon-only color="danger" (click)="editarProfessor()">\n\n      <ion-icon name="create"></ion-icon>\n\n    </button>\n\n  </ion-fab>\n\n\n\n</ion-content>\n\n'/*ion-inline-end:"C:\Users\Julio\Desktop\teste2\palmphone_V3\src\pages\perfil\perfil.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_2_ionic_angular__["g" /* NavController */],
             __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["h" /* NavParams */],
@@ -1247,7 +1219,7 @@ var MyApp = (function () {
         });
     }
     MyApp = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_1__angular_core__["m" /* Component */])({template:/*ion-inline-start:"D:\ARQUIVOS\palmphone_V3\src\app\app.html"*/'<ion-nav [root]="rootPage"></ion-nav>\n\n'/*ion-inline-end:"D:\ARQUIVOS\palmphone_V3\src\app\app.html"*/
+        Object(__WEBPACK_IMPORTED_MODULE_1__angular_core__["m" /* Component */])({template:/*ion-inline-start:"C:\Users\Julio\Desktop\teste2\palmphone_V3\src\app\app.html"*/'<ion-nav [root]="rootPage"></ion-nav>\n\n'/*ion-inline-end:"C:\Users\Julio\Desktop\teste2\palmphone_V3\src\app\app.html"*/
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_2_ionic_angular__["i" /* Platform */],
             __WEBPACK_IMPORTED_MODULE_3__ionic_native_status_bar__["a" /* StatusBar */],
@@ -1355,13 +1327,6 @@ var HomePage = (function () {
             message: 'Deseja sair do aplicativo?',
             buttons: [
                 {
-                    text: 'Cancelar',
-                    role: 'cancel',
-                    handler: function () {
-                        console.log('evento cancelado');
-                    }
-                },
-                {
                     text: 'Confirmar',
                     handler: function () {
                         //CHAMA FUNCAO PARA DELETAR DADOS DO USUARIO GRAVADOS NO STORAGE
@@ -1389,13 +1354,6 @@ var HomePage = (function () {
             title: 'Confirmação',
             message: 'Deseja sincronizar os dados com o servidor?',
             buttons: [
-                {
-                    text: 'Cancelar',
-                    role: 'cancel',
-                    handler: function () {
-                        console.log('evento cancelado');
-                    }
-                },
                 {
                     text: 'Confirmar',
                     handler: function () {
@@ -1470,7 +1428,7 @@ var HomePage = (function () {
     };
     HomePage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_5__angular_core__["m" /* Component */])({
-            selector: 'page-home',template:/*ion-inline-start:"D:\ARQUIVOS\palmphone_V3\src\pages\home\home.html"*/'<script src="https://www.gstatic.com/firebasejs/4.10.0/firebase.js"></script>\n\n<ion-content padding>\n\n  <ion-card class="btnPrincipais">\n\n    <button id="perfil" ion-button full (click)="abrirTelaPerfil()">\n\n      Perfil\n\n    </button>\n\n\n\n    <button id="coleta" ion-button  full (click)="abrirTelaColeta()">\n\n      Iniciar coleta\n\n    </button>\n\n\n\n    <button id="sincronizar" ion-button full button-md color="secondary" (click)="verificarStorage()">\n\n      Sincronizar\n\n    </button>\n\n  </ion-card>\n\n\n\n  <ion-card> \n\n    <button id="sair" ion-button full button-md color="danger" (click)="singnOut()">\n\n      Sair\n\n    </button>\n\n  </ion-card>\n\n\n\n</ion-content>\n\n'/*ion-inline-end:"D:\ARQUIVOS\palmphone_V3\src\pages\home\home.html"*/
+            selector: 'page-home',template:/*ion-inline-start:"C:\Users\Julio\Desktop\teste2\palmphone_V3\src\pages\home\home.html"*/'<script src="https://www.gstatic.com/firebasejs/4.10.0/firebase.js"></script>\n\n<ion-content padding>\n\n  <ion-card class="btnPrincipais">\n\n    <button id="perfil" ion-button full (click)="abrirTelaPerfil()">\n\n      Perfil\n\n    </button>\n\n\n\n    <button id="coleta" ion-button  full (click)="abrirTelaColeta()">\n\n      Iniciar coleta\n\n    </button>\n\n\n\n    <button id="sincronizar" ion-button full button-md color="secondary" (click)="verificarStorage()">\n\n      Sincronizar\n\n    </button>\n\n  </ion-card>\n\n\n\n  <ion-card> \n\n    <button id="sair" ion-button full button-md color="danger" (click)="singnOut()">\n\n      Sair\n\n    </button>\n\n  </ion-card>\n\n\n\n</ion-content>\n\n'/*ion-inline-end:"C:\Users\Julio\Desktop\teste2\palmphone_V3\src\pages\home\home.html"*/
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_6_ionic_angular__["g" /* NavController */],
             __WEBPACK_IMPORTED_MODULE_7__providers_auth__["a" /* AuthProvider */],
@@ -1625,7 +1583,7 @@ var LoginPage = (function () {
     };
     LoginPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_3__angular_core__["m" /* Component */])({
-            selector: 'page-login',template:/*ion-inline-start:"D:\ARQUIVOS\palmphone_V3\src\pages\login\login.html"*/'<script src="https://www.gstatic.com/firebasejs/4.12.1/firebase.js"></script>\n\n<ion-header>\n\n  <ion-toolbar>\n\n    <ion-title>Login</ion-title>\n\n  </ion-toolbar>\n\n</ion-header>\n\n\n\n<ion-content padding>\n\n  <form [formGroup]="signinForm" (ngSubmit)="signIn(); $event.preventDefault()">\n\n\n\n    <ion-item>\n\n      <ion-icon name="mail" item-start color="primary"></ion-icon>\n\n      <input id="email" type="email" placeholder="Email" formControlName="email"/>\n\n    </ion-item>\n\n\n\n    <ion-item>\n\n      <ion-icon name="lock" item-start color="primary"></ion-icon>\n\n      <input id="password" type="password" placeholder="Senha" formControlName="password"/>\n\n    </ion-item>\n\n\n\n    <br>\n\n    <button id="entrar" ion-button full type="submit" [disabled]="signinForm.invalid">ENTRAR</button>\n\n\n\n  </form>\n\n\n\n  <button id="cadastrar" ion-button full button-md (click)="cadastrar()">CADASTRAR NOVO USUÁRIO</button>\n\n\n\n</ion-content>\n\n'/*ion-inline-end:"D:\ARQUIVOS\palmphone_V3\src\pages\login\login.html"*/,
+            selector: 'page-login',template:/*ion-inline-start:"C:\Users\Julio\Desktop\teste2\palmphone_V3\src\pages\login\login.html"*/'<script src="https://www.gstatic.com/firebasejs/4.12.1/firebase.js"></script>\n\n<ion-header>\n\n  <ion-toolbar>\n\n    <ion-title>Login</ion-title>\n\n  </ion-toolbar>\n\n</ion-header>\n\n\n\n<ion-content padding>\n\n  <form [formGroup]="signinForm" (ngSubmit)="signIn(); $event.preventDefault()">\n\n\n\n    <ion-item>\n\n      <ion-icon name="mail" item-start color="primary"></ion-icon>\n\n      <input id="email" type="email" placeholder="Email" formControlName="email"/>\n\n    </ion-item>\n\n\n\n    <ion-item>\n\n      <ion-icon name="lock" item-start color="primary"></ion-icon>\n\n      <input id="password" type="password" placeholder="Senha" formControlName="password"/>\n\n    </ion-item>\n\n\n\n    <br>\n\n    <button id="entrar" ion-button full type="submit" [disabled]="signinForm.invalid">ENTRAR</button>\n\n\n\n  </form>\n\n\n\n  <button id="cadastrar" ion-button full button-md (click)="cadastrar()">CADASTRAR NOVO USUÁRIO</button>\n\n\n\n</ion-content>\n\n'/*ion-inline-end:"C:\Users\Julio\Desktop\teste2\palmphone_V3\src\pages\login\login.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_4_ionic_angular__["g" /* NavController */],
             __WEBPACK_IMPORTED_MODULE_4_ionic_angular__["a" /* AlertController */],
