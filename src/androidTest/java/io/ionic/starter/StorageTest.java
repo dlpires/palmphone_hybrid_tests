@@ -103,7 +103,7 @@ public class StorageTest {
 
         //esperando 2 segundos
         try {
-            Thread.sleep(2000);
+            Thread.sleep(4000);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
@@ -124,7 +124,7 @@ public class StorageTest {
 
         //esperando 4 segundos
         try {
-            Thread.sleep(4000);
+            Thread.sleep(5000);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
@@ -182,6 +182,13 @@ public class StorageTest {
         //FINALIZANDO CHAMADA
         onWebView().withElement(findElement(Locator.ID, "botao_finalizar"))
                 .perform(webClick());
+
+        //esperando 2 segundos
+        try {
+            Thread.sleep(2000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
 
         //CONFIRMANDO PROCESSO
         onWebView().withElement(findElement(Locator.XPATH, "//button[contains(@class, 'alert-button')]"))

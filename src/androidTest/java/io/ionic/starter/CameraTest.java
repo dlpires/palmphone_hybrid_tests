@@ -104,7 +104,7 @@ public class CameraTest {
 
         //esperando 2 segundos
         try {
-            Thread.sleep(2000);
+            Thread.sleep(4000);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
@@ -125,7 +125,7 @@ public class CameraTest {
 
         //esperando 4 segundos
         try {
-            Thread.sleep(4000);
+            Thread.sleep(5000);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
@@ -164,8 +164,10 @@ public class CameraTest {
         onWebView().withElement(findElement(Locator.ID, "botao_camera"))
                 .perform(webClick());
 
+
         //INSERINDO 10 RAs
         for(int i = 0; i < 10; i++){
+
             //esperando 3 segundos
             try {
                 Thread.sleep(3000);
@@ -176,13 +178,19 @@ public class CameraTest {
             //CONFIRMANDO PROCESSO
             onWebView().withElement(findElement(Locator.XPATH, "//button[contains(@class, 'alert-button')]"))
                     .perform(webClick());
-
         }
 
-        //SAINDO DA CÂMERA
+        //esperando 2 segundos
+        try {
+            Thread.sleep(1500);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+
+        //SAINDO DA CAMERA
         pressBack();
 
-        //ESPERA DE 2 SEGUNDOS
+        //esperando 2 segundos
         try {
             Thread.sleep(2000);
         } catch (InterruptedException e) {
