@@ -170,7 +170,7 @@ public class CameraTest {
 
             //esperando 3 segundos
             try {
-                Thread.sleep(3000);
+                Thread.sleep(4000);
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
@@ -182,12 +182,12 @@ public class CameraTest {
 
         //esperando 2 segundos
         try {
-            Thread.sleep(1500);
+            Thread.sleep(2000);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
 
-        //SAINDO DA CAMERA
+        /*//SAINDO DA CAMERA
         pressBack();
 
         //esperando 2 segundos
@@ -282,7 +282,7 @@ public class CameraTest {
             Thread.sleep(2000);
         } catch (InterruptedException e) {
             e.printStackTrace();
-        }
+        }*/
     }
 
     /*private static Intent withWebFormIntent(){
