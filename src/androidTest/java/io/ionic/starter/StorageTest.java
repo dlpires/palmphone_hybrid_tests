@@ -146,15 +146,16 @@ public class StorageTest {
                 .withElement(findElement(Locator.ID, "abrir_leitor"))
                 .perform(webClick());
 
-        //esperando 4 segundos
-        try {
-            Thread.sleep(2000);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
 
         //INSERINDO 10 RAs
         for(int i = 0; i < 10; i++){
+            //esperando 2 segundos
+            try {
+                Thread.sleep(2000);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+            
             onWebView().withElement(findElement(Locator.ID, "ra"))
                     .perform(DriverAtoms.webKeys(Integer.toString(i)));
 
@@ -170,13 +171,6 @@ public class StorageTest {
 
             onWebView().withElement(findElement(Locator.XPATH, "//button[contains(@class, 'alert-button')]"))
                     .perform(webClick());
-
-            //esperando 2 segundos
-            try {
-                Thread.sleep(2000);
-            } catch (InterruptedException e) {
-                e.printStackTrace();
-            }
         }
 
         //FINALIZANDO CHAMADA
